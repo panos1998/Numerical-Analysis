@@ -13,9 +13,9 @@ def leftrectangle(start, end, h, f):
         xi = xi+h
         total = total + f(xi)
 
-    totalintegral = h*total
+    leftrectangleIntegral = h*total
 
-    print('This is Left Rectangle: ' + str(totalintegral))
+    return  leftrectangleIntegral
 
 
 def rightrectangle(start, end, h, f):
@@ -30,6 +30,8 @@ def rightrectangle(start, end, h, f):
         xi = xi-h
         total = total + f(xi)
 
-    totalintegral = h*total
+    rightrectangleIntegral = h*total
 
-    print('This is Right Rectangle:  ' + str(totalintegral))
+
+
+    return rightrectangleIntegral
