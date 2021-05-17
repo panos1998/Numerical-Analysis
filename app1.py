@@ -2,12 +2,12 @@ import math
 
 from IntegralMethods.RectangleIntegration import leftrectangle, rightrectangle
 from IntegralMethods.TrapezoidIntegration import trapezoid
-from  math import sin, exp, pi
+from math import sin, exp, pi
 import numpy as np
 import matplotlib.pyplot as plt
-leftrect=[]
-rightrect=[]
-trapez=[]
+leftrect = []
+rightrect = []
+trapez = []
 sol = (2/13)+(3/13*np.e**(3/4*np.pi))
 step = [10**-1, 10**-2, 10**-3, 10**-4, 10**-5, 10**-6, 10**-7]
 def f(x):
@@ -24,4 +24,7 @@ if __name__ == "__main__":
     print(rightrect)
     print(trapez)
     plt.plot(leftrect,step)
+    plt.plot(rightrect,step)
+    plt.plot(trapez,step)
+    plt.legend(["Left", "Right","Trap"])
     plt.show()
