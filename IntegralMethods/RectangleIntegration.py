@@ -31,7 +31,4 @@ def rightrectangle(start, end, h, f):
         total = total + f(xi)
 
     rightrectangleIntegral = h*total
-
-
-
     return rightrectangleIntegral
