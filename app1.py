@@ -20,17 +20,17 @@ def f(x):
 if __name__ == "__main__":
 
     for i in step:
-        leftrect.append(math.log10(abs(sol - leftrectangle(0, pi/4, i, f))))
-        rightrect.append(math.log10(abs(sol - rightrectangle(0, pi/4, i, f))))
-        trapez.append(math.log10(abs(sol - trapezoid(0, pi/4, i, f))))
+        leftrect.append(abs(sol - leftrectangle(0, pi/4, i, f)))
+        rightrect.append(abs(sol - rightrectangle(0, pi/4, i, f)))
+        trapez.append(abs(sol - trapezoid(0, pi/4, i, f)))
 
     print(leftrect)
     print(rightrect)
     print(trapez)
 
-    plt.plot(leftrect, step)
-    plt.plot(rightrect, step)
-    plt.plot(trapez, step)
+    plt.loglog(step, leftrect)
+    plt.loglog(step, rightrect)
+    plt.loglog(step, trapez)
     plt.legend(["Left", "Right", "Trap"])
 
     plt.show()
