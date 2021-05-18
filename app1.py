@@ -12,7 +12,7 @@ rightrect = []
 trapez = []
 simps = []
 sol = (2/13)+(3/13*np.e**(3/4*np.pi))
-step = [10**0,10**-1,10**-2,10**-3,10**-4, 10**-5,10**-6,10**-7]
+step = [10**0,10**-1,10**-2,10**-3,10**-4, 10**-5,10**-6,10**-7,10**-8]
 
 
 def f(x):
@@ -38,6 +38,6 @@ if __name__ == "__main__":
     plt.loglog(step, trapez)
     plt.loglog(step, simps)
     plt.legend(["Left", "Right", "Trap","Simpson"])
-    plt.ylim([10**-7,1])
-    plt.xlim([10**-7,10])
+    plt.ylim([10**-8,1])
+    plt.xlim([10**-8,10])
     plt.show()

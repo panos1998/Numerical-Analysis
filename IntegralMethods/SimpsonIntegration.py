@@ -5,8 +5,8 @@ def f(x):
     return exp(3*x)*sin(2*x)
 
 def simpson(start, end, h, f):
-    points = ceil((end - start) / h)
-    x = np.linspace(start, end, 2*points + 1)  # N+1 points make N subintervals
+    points = ceil((end - start)*2 / h)
+    x = np.linspace(start, end, points + 1)  # N+1 points make N subintervals
     y = f(x)
     coefficient=[]
     for i in range(0,len(x),1):
@@ -16,6 +16,7 @@ def simpson(start, end, h, f):
             coefficient.append(4)
         else:
             coefficient.append(2)
+    print("this is points:" +str(points))
     print(len(x))
     print(len(y))
     y_coeff = coefficient * y
