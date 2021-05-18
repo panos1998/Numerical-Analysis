@@ -8,4 +8,4 @@ We implemented four methods of ***Numerical Integration***:
 3. ***Trapezoid***
 4. ***Simpsons***
 
-The target function to estimate its integral using the above methods is \alpha
+The target function to estimate its integral using the above methods is $\sum_{x = a}^{b} f(x)$
