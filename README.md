@@ -25,3 +25,5 @@ In this section we implemented the euler method for system of differential equat
 ![](https://i.ibb.co/TBD1Kkx/image.png) ![](https://i.ibb.co/tpWS0v1/image.png)
 ![](https://i.ibb.co/2MZdx1s/image.png)
 ![](https://i.ibb.co/8rP2Wpz/image.png)
+
+What we observe is tha with lower dx the euler method "regenerates foxes and rabbits"
