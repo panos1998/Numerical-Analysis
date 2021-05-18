@@ -22,11 +22,11 @@ for dt in dt:
  plt.ylabel("No. of Rabbits and No. of Foxes")
  plt.show()
 
-plt.figure(2)
-plt.plot(x[:, 0], x[:, 1], "k--")
-plt.grid()
-plt.title("Phase Plot")
-plt.xlabel("X")
-plt.ylabel("Y")
+ plt.figure(2)
+ plt.plot(x[:, 0], x[:, 1], "k--")
+ plt.grid()
+ plt.title("Phase Plot")
+ plt.xlabel("X")
+ plt.ylabel("Y")
 
-plt.show()
+ plt.show()
