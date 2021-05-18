@@ -10,13 +10,15 @@ def simpson(start, end, h, f):
     y = f(x)
     coefficient=[]
     for i in range(0,len(x),1):
-        if (i == 0 or i == 2*points):
+        if (i == 0 or i == (len(x)-1)):
            coefficient.append(1)
         elif (i % 2):
             coefficient.append(4)
         else:
             coefficient.append(2)
-    y_coeff=y*coefficient
+    print(len(x))
+    print(len(y))
+    y_coeff = coefficient * y
     simpsonIntegral = h/6*(np.sum(y_coeff))
     return simpsonIntegral
 
