@@ -1,5 +1,5 @@
 # Numerical-Analysis
-Numerical Analysis methods in Python
+Numerical Analysis methods in Python by Theofilos Panagiotou 9174 & Panagiotis Petridis 9286
 
 ### First Sector
 We implemented four methods of ***Numerical Integration***:
