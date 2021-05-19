@@ -26,4 +26,4 @@ In this section we implemented the euler method for system of differential equat
 ![](https://i.ibb.co/2MZdx1s/image.png)
 ![](https://i.ibb.co/8rP2Wpz/image.png)
 
-What we observe is that with lower dx the  number of rabbits and  foxes after instantly changing, then we have a period of time where both are zero and then come back to initiall state and then we have a revision. As with the numerical integration, decrasing the h length we take a  more presice solution. Since the error in euler has an quadratic analogous relation with h, we think that in the second try with h=0.01 we have less error.
+What we observe is that with lower dx the  number of rabbits and  foxes after instantly changing, then we have a period of time where both are zero and then come back to initiall state and then we have a revision. As with the numerical integration, decreasing the h length we take a  more presice solution. Since the error in euler has an quadratic analogous relation with h, we think that in the second try with h=0.01 we have less error.
