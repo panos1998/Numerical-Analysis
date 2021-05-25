@@ -8,11 +8,13 @@ We implemented four methods of ***Numerical Integration***:
 3. ***Trapezoid***
 4. ***Simpsons***
 
+Inside file app1.py we run the functions from folder IntegralMethods and we print the errors and the result diagramm for each h.
+
 The target function to estimate its integral using the above methods is ![](https://i.ibb.co/RDysxvD/image.png).
 Especially we calculated the following integral ![](https://i.ibb.co/SQJ9L7f/image.png).
 
 #### Error Diagramm
-Below the diagramm presents the difference between each method and the calculated  from the above integral  value.
+Below the diagramm presents the differforence between each method and the calculated  from the above integral  value.
 
 ![](https://i.ibb.co/sF1rPbB/image.png)
 
@@ -25,5 +27,7 @@ In this section we implemented the euler method for system of differential equat
 ![](https://i.ibb.co/TBD1Kkx/image.png) ![](https://i.ibb.co/tpWS0v1/image.png)
 ![](https://i.ibb.co/2MZdx1s/image.png)
 ![](https://i.ibb.co/8rP2Wpz/image.png)
+
+Inside file app2.py we call euler function from Euler.py for each set of initial values for the foxes and rabbits. Then we print the results and phaseplot.
 
 What we observe is that with lower dx the  number of rabbits and  foxes after instantly changing, then we have a period of time where both are zero and then come back to initiall state and then we have a revision. As with the numerical integration, decreasing the h length we take a  more presice solution. Since the error in euler has an quadratic analogous relation with h, we think that in the second try with h=0.01 we have less error.
