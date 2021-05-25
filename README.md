@@ -17,7 +17,7 @@ Below the diagramm presents the difference between each method and the calculate
 ![](https://i.ibb.co/sF1rPbB/image.png)
 
 At the horizontal axis the step of discretation  h scales from ***1*** to ***10*** <sup>***-10***</sup>. 
-At the vertical axis we see how the error is changing during h changes. Simpsons method seems to be the most efficient between others. In general as h is getting minimized the error also decreases. As we know from theory the trapezoid absolute error upper bound is given by:
+At the vertical axis we see how the error is changing during h changes. Simpsons method seems to be the most efficient between others. In general as h is getting minimized the error also decreases. As we know from theory the trapezoid absolute error upper bound is given by:<br>
 ![](https://i.ibb.co/9rkHWyM/image.png).<br>So Error has an analogous relation with  h. Similar  analogous relation have also the other methods (left-right rectangle and simpsons). That is why we have the above  diagramm.
 
 ### Second Sector
